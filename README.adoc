@@ -1,0 +1,6 @@
+= Schriftliche Aufgaben
+
+Dieses Repo enthält Übungsaufgaben zu Programmierthemen in PDF-Form.
+Es gibt hier keine Aufgaben, bei denen Code geschrieben werden soll,
+vielmehr geht es darum, z.B. Code oder Ausschnitte davon zu verstehen,
+Fehler zu finden, oder die Ausgabe von Code vorherzusagen.
