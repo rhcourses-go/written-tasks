@@ -1,0 +1,62 @@
+% Definitions to help creating questions.
+% Will be moved into a package later.
+
+% Inputs a source file as a question with a title.
+% Respects the language setting from the src2listings package.
+% Usage: \inputquestionsrc[<label>]{<title>}{<path>}
+\NewDocumentCommand{\inputquestionsrc}{ o m m }{
+    \IfValueTF{#1}{
+        \inputsrcfile[%
+            rangeprefix=//\ ,%
+            includerangemarker=false,%
+            linerange={{begin:#1}-{end:#1}}%
+        ][title = {#2}]{#3}
+    }{
+        \inputsrcfile[][title = {#2}]{#3}
+    }
+}
+
+% Allows to toggle solutions on/off.
+\newtoggle{show-solutions}
+\togglefalse{show-solutions}
+
+% Inputs a source file as a solution.
+% Respects the language setting from the src2listings package.
+% Usage: \inputsolutionsrc[<label>]{<path>}
+\NewDocumentCommand{\inputsolutionsrc}{ o m }{
+    \iftoggle{show-solutions}{\inputquestionsrc[#1]{}{#2}}{}
+}
+
+% TcolorBox style for task and solution headers.
+% Grey background, sharp corners, no frame, bold and large title.
+\tcbset{%
+    taskheader/.style={%
+        colback=black!5!white,%
+        colframe=black!5!white,%
+        sharp corners,%
+    }%
+}
+
+% Environment for a task with a title.
+% Usage: \begin{task}[<tcboptions>]{<title>}
+\NewDocumentEnvironment{task}{ O{} m }{
+    \begin{tcolorbox}[%
+        taskheader,
+    ]
+    \large\textbf{Aufgabe: #2}
+    \end{tcolorbox}
+}{
+    \newpage
+}
+
+% Environment for a solution.
+% Usage: \begin{solution}
+\NewDocumentEnvironment{solution}{}{
+    \iftoggle{show-solutions}{
+        \begin{tcolorbox}[%
+            taskheader,
+        ]
+        \large\textbf{Lösung}
+        \end{tcolorbox}
+    }{}
+}{}

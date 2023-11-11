@@ -1,0 +1,18 @@
+= Datentypen bestimmen
+
+Bei diesen Aufgaben geht es darum, die Typen der Variablen zu bestimmen,
+die in den Funktionen `Types1`, `Types2` etc. verwendet werden.
+
+Dem reinen Quelltext der Funktionen ist nicht zu entnehmen,
+welche Typen die Variablen haben. Sie müssen also die Typen
+aus der Verwendung der Variablen ableiten.
+
+Die Funktionen `Foo1`, `Foo2` etc. sind Hilfsfunktionen, die Werte erwarten
+und/oder liefern, um die Typen dieser in `Types1`, `Types2` etc. zu verschleiern.
+
+`PrintTypes` gibt die Typen der Variablen aus, die ihr übergeben werden.
+Dies ist eine Hilfsfunkion, die für die Aufgaben nicht relevant ist,
+die aber in den Tests verwendet wird, um die Lösungen zu überprüfen.
+
+Jede Aufgabe steht dabei in einem eigenen Package, damit die Namen der
+Hilfsfunktionen nicht miteinander kollidieren.

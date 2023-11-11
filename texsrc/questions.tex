@@ -1,0 +1,21 @@
+\documentclass[a4paper]{scrartcl}
+
+\usepackage[lang=go]{src2listings}
+
+\input{defs/defs.tex}
+
+% enable/disable solutions
+% TODO: Move this into a package and provide commands and package options for it.
+\toggletrue{show-solutions}
+
+\newcommand{\srcdir}{../tasks}
+
+\begin{document}
+
+\input{tasks/prog-output.tex}
+\input{tasks/types.tex}
+\input{tasks/bugs.tex}
+\input{tasks/syntaxerrors.tex}
+\input{tasks/signatures.tex}
+
+\end{document}

@@ -1,0 +1,17 @@
+package vardefs1
+
+/** Version mit Fehlern
+func VarDefs_errors() {
+	// begin:task
+	x := 42
+	var int y 55
+	int z = 42
+	s := string([]byte{'a', 'b', 'c'})
+	b := []byte{'a', 'b', 'c'}
+	var l1 []int := make([]int, 0)
+	string := hallo
+	// end:task
+
+	fmt.Printf("%v\n%v\n%v\n%v\n%v\n%v\n%v\n", x, y, z, s, b, l, string)
+}
+**/

@@ -1,0 +1,17 @@
+= Signaturen bestimmen
+
+In diesem Ordner gibt es Aufgaben, die sich mit der Bestimmung von 
+Funktions-Signaturen beschäftigen.
+D.h. es geht darum, aus einem Stück Quellcode herzuleiten, welche Parameter und welche
+Rückgabetypen die Funktionen haben, die in diesem Code vorkommen.
+
+Es gibt ein Package für jede Aufgabe.
+Darin ist jeweils in der Datei `callfoos.go`` eine Funktion `CallFoos` definiert,
+die den Code enthält, der untersucht werden soll. Darin werden Funktionen `Foo1`,
+`Foo2` etc. aufgerufen, deren Signaturen bestimmt werden sollen.
+Die Funktionen `Foo1` etc. sind in der Datei `foos.go` definiert.
+
+Manche der Funktionen `CallFoos` haben selbst auch einen Rückgabetyp.
+Dieser Typ ist hier im Quellcode offensichtlich, in den Aufgaben-PDFs
+kann aber eine Aufgabe auch so formuliert sein, dass der Rückgabetyp
+der Funktion `CallFoos` erst ermittelt werden muss.

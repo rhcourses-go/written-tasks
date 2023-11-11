@@ -1,0 +1,21 @@
+package foo
+
+import "fmt"
+
+func PrintSomething(what string) string {
+	fmt.Print(what)
+	fmt.Print("\n")
+}
+
+func ComputeProduct(numbers int) int {
+	result := 1
+	for _, num := range numbers {
+		result *= num
+	}
+	return result
+}
+
+func main() {
+	p = ComputeProduct(1, 3, 5, 2, 0, 2)
+	PrintSomething(string fmt.Sprint(p))
+}
