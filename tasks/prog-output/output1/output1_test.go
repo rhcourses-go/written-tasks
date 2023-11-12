@@ -4,11 +4,14 @@ import "fmt"
 
 func ExampleFoo1() {
 	Foo1()
+	// begin:Foo1
 	// Output:
 	// 8 7 20
 	// 8-7-20
 	// 14
 	// 2.5
+
+	// end:Foo1
 }
 
 func ExampleFoo2() {
@@ -18,6 +21,7 @@ func ExampleFoo2() {
 	fmt.Println()
 	Foo2(5)
 
+	// begin:Foo2
 	// Output:
 	// *
 	// **
@@ -33,6 +37,8 @@ func ExampleFoo2() {
 	// ****
 	// ********
 	// ****************
+
+	// end:Foo2
 }
 
 func ExampleFoo3() {
@@ -42,6 +48,7 @@ func ExampleFoo3() {
 	fmt.Println()
 	Foo3(5)
 
+	// begin:Foo3
 	// Output:
 	// *
 	// **
@@ -57,6 +64,8 @@ func ExampleFoo3() {
 	// ***
 	// ****
 	// *****
+
+	// end:Foo3
 }
 
 func ExampleFoo4() {
@@ -64,25 +73,34 @@ func ExampleFoo4() {
 	Foo4(4)
 	Foo4(5)
 
+	// begin:Foo4
 	// Output:
 	// 342
 	// 442
 	// 542
+
+	// end:Foo4
 }
 
 func ExampleFoo5() {
 	Foo5()
 
+	// begin:Foo5
 	// Output:
 	// 2342
 	// 23
+
+	// end:Foo5
 }
 
 func ExampleFoo6() {
 	Foo6()
 
+	// begin:Foo6
 	// Output:
 	// 3
 	// 2
 	// 1
+
+	// end:Foo6
 }
